@@ -1,0 +1,8 @@
+{
+  "name": "node-red-project",
+  "version": "1.0.0",
+  "description": "A Node-RED project",
+  "dependencies": {
+    "node-red-dashboard": "^3.1.6"
+  }
+}
