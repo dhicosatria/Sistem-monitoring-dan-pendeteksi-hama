@@ -1,0 +1,476 @@
+[
+{
+"id": "ac4245687b1da55d",
+"type": "tab",
+"label": "testing relay",
+"disabled": false,
+"info": "",
+"env": []
+},
+{
+"id": "ef1aabfdb73bf094",
+"type": "mqtt out",
+"z": "ac4245687b1da55d",
+"name": "",
+"topic": "sensor/relay/1",
+"qos": "2",
+"retain": "",
+"respTopic": "",
+"contentType": "",
+"userProps": "",
+"correl": "",
+"expiry": "",
+"broker": "394c31ef326a4cfc",
+"x": 580,
+"y": 340,
+"wires": []
+},
+{
+"id": "22f32f24e32c2ef4",
+"type": "mqtt out",
+"z": "ac4245687b1da55d",
+"name": "",
+"topic": "sensor/relay/2",
+"qos": "2",
+"retain": "",
+"respTopic": "",
+"contentType": "",
+"userProps": "",
+"correl": "",
+"expiry": "",
+"broker": "394c31ef326a4cfc",
+"x": 580,
+"y": 380,
+"wires": []
+},
+{
+"id": "cac565b0a6212591",
+"type": "mqtt out",
+"z": "ac4245687b1da55d",
+"name": "",
+"topic": "sensor/relay/3",
+"qos": "1",
+"retain": "",
+"respTopic": "",
+"contentType": "",
+"userProps": "",
+"correl": "",
+"expiry": "",
+"broker": "394c31ef326a4cfc",
+"x": 580,
+"y": 440,
+"wires": []
+},
+{
+"id": "c1bbe33f53d3368c",
+"type": "mqtt out",
+"z": "ac4245687b1da55d",
+"name": "",
+"topic": "sensor/relay/4",
+"qos": "1",
+"retain": "",
+"respTopic": "",
+"contentType": "",
+"userProps": "",
+"correl": "",
+"expiry": "",
+"broker": "394c31ef326a4cfc",
+"x": 580,
+"y": 480,
+"wires": []
+},
+{
+"id": "1ab3230a7db675dc",
+"type": "ui_switch",
+"z": "ac4245687b1da55d",
+"name": "",
+"label": "Relay 1",
+"tooltip": "",
+"group": "69b896e864744a45",
+"order": 1,
+"width": 0,
+"height": 0,
+"passthru": true,
+"decouple": "false",
+"topic": "sensor/relay/1",
+"topicType": "str",
+"style": "",
+"onvalue": "1",
+"onvalueType": "str",
+"onicon": "",
+"oncolor": "",
+"offvalue": "0",
+"offvalueType": "str",
+"officon": "",
+"offcolor": "",
+"animate": true,
+"className": "",
+"x": 370,
+"y": 340,
+"wires": [
+[
+"ef1aabfdb73bf094"
+]
+]
+},
+{
+"id": "d0b2e08ec68e7101",
+"type": "ui_switch",
+"z": "ac4245687b1da55d",
+"name": "",
+"label": "Relay 2",
+"tooltip": "",
+"group": "69b896e864744a45",
+"order": 2,
+"width": 0,
+"height": 0,
+"passthru": true,
+"decouple": "false",
+"topic": "sensor/relay/2",
+"topicType": "str",
+"style": "",
+"onvalue": "1",
+"onvalueType": "str",
+"onicon": "",
+"oncolor": "",
+"offvalue": "0",
+"offvalueType": "str",
+"officon": "",
+"offcolor": "",
+"animate": true,
+"className": "",
+"x": 370,
+"y": 380,
+"wires": [
+[
+"22f32f24e32c2ef4"
+]
+]
+},
+{
+"id": "168c9648a98ef993",
+"type": "ui_switch",
+"z": "ac4245687b1da55d",
+"name": "",
+"label": "Relay 3",
+"tooltip": "",
+"group": "69b896e864744a45",
+"order": 3,
+"width": 0,
+"height": 0,
+"passthru": true,
+"decouple": "false",
+"topic": "sensor/relay/3",
+"topicType": "str",
+"style": "",
+"onvalue": "1",
+"onvalueType": "str",
+"onicon": "",
+"oncolor": "",
+"offvalue": "0",
+"offvalueType": "str",
+"officon": "",
+"offcolor": "",
+"animate": true,
+"className": "",
+"x": 370,
+"y": 440,
+"wires": [
+[
+"cac565b0a6212591"
+]
+]
+},
+{
+"id": "6e9fa2257ae51883",
+"type": "ui_switch",
+"z": "ac4245687b1da55d",
+"name": "",
+"label": "Relay 4",
+"tooltip": "",
+"group": "69b896e864744a45",
+"order": 4,
+"width": 0,
+"height": 0,
+"passthru": true,
+"decouple": "false",
+"topic": "sensor/relay/4",
+"topicType": "str",
+"style": "",
+"onvalue": "1",
+"onvalueType": "str",
+"onicon": "",
+"oncolor": "",
+"offvalue": "0",
+"offvalueType": "str",
+"officon": "",
+"offcolor": "",
+"animate": true,
+"className": "",
+"x": 370,
+"y": 480,
+"wires": [
+[
+"c1bbe33f53d3368c"
+]
+]
+},
+{
+"id": "17614d1d113daac9",
+"type": "ui_led",
+"z": "ac4245687b1da55d",
+"order": 4,
+"group": "69b896e864744a45",
+"width": 0,
+"height": 0,
+"label": "",
+"labelPlacement": "left",
+"labelAlignment": "left",
+"colorForValue": [
+{
+"color": "#77767b",
+"value": "0",
+"valueType": "num"
+},
+{
+"color": "#ff0000",
+"value": "1",
+"valueType": "num"
+}
+],
+"allowColorForValueInMessage": false,
+"shape": "circle",
+"showGlow": false,
+"name": "",
+"x": 570,
+"y": 560,
+"wires": []
+},
+{
+"id": "831a054c429c708a",
+"type": "mqtt in",
+"z": "ac4245687b1da55d",
+"name": "",
+"topic": "sensor/relay/1",
+"qos": "2",
+"datatype": "auto-detect",
+"broker": "394c31ef326a4cfc",
+"nl": false,
+"rap": true,
+"rh": 0,
+"inputs": 0,
+"x": 310,
+"y": 560,
+"wires": [
+[
+"17614d1d113daac9"
+]
+]
+},
+{
+"id": "4289b3e73a139ab8",
+"type": "ui_led",
+"z": "ac4245687b1da55d",
+"order": 4,
+"group": "69b896e864744a45",
+"width": 0,
+"height": 0,
+"label": "",
+"labelPlacement": "left",
+"labelAlignment": "left",
+"colorForValue": [
+{
+"color": "#77767b",
+"value": "0",
+"valueType": "num"
+},
+{
+"color": "#ff0000",
+"value": "1",
+"valueType": "num"
+}
+],
+"allowColorForValueInMessage": false,
+"shape": "circle",
+"showGlow": false,
+"name": "",
+"x": 570,
+"y": 620,
+"wires": []
+},
+{
+"id": "11abedaaa061d0e5",
+"type": "mqtt in",
+"z": "ac4245687b1da55d",
+"name": "",
+"topic": "sensor/relay/2",
+"qos": "1",
+"datatype": "auto-detect",
+"broker": "394c31ef326a4cfc",
+"nl": false,
+"rap": true,
+"rh": 0,
+"inputs": 0,
+"x": 310,
+"y": 620,
+"wires": [
+[
+"4289b3e73a139ab8"
+]
+]
+},
+{
+"id": "e435f8f51c1292db",
+"type": "ui_led",
+"z": "ac4245687b1da55d",
+"order": 4,
+"group": "69b896e864744a45",
+"width": 0,
+"height": 0,
+"label": "",
+"labelPlacement": "left",
+"labelAlignment": "left",
+"colorForValue": [
+{
+"color": "#77767b",
+"value": "0",
+"valueType": "num"
+},
+{
+"color": "#ff0000",
+"value": "1",
+"valueType": "num"
+}
+],
+"allowColorForValueInMessage": false,
+"shape": "circle",
+"showGlow": false,
+"name": "",
+"x": 570,
+"y": 660,
+"wires": []
+},
+{
+"id": "0df0ba1437cf731e",
+"type": "mqtt in",
+"z": "ac4245687b1da55d",
+"name": "",
+"topic": "sensor/relay/3",
+"qos": "1",
+"datatype": "auto-detect",
+"broker": "394c31ef326a4cfc",
+"nl": false,
+"rap": true,
+"rh": 0,
+"inputs": 0,
+"x": 310,
+"y": 660,
+"wires": [
+[
+"e435f8f51c1292db"
+]
+]
+},
+{
+"id": "fc049e391143909c",
+"type": "ui_led",
+"z": "ac4245687b1da55d",
+"order": 4,
+"group": "69b896e864744a45",
+"width": 0,
+"height": 0,
+"label": "",
+"labelPlacement": "left",
+"labelAlignment": "left",
+"colorForValue": [
+{
+"color": "#77767b",
+"value": "0",
+"valueType": "num"
+},
+{
+"color": "#ff0000",
+"value": "1",
+"valueType": "num"
+}
+],
+"allowColorForValueInMessage": false,
+"shape": "circle",
+"showGlow": false,
+"name": "",
+"x": 570,
+"y": 700,
+"wires": []
+},
+{
+"id": "d419f1076480a0c9",
+"type": "mqtt in",
+"z": "ac4245687b1da55d",
+"name": "",
+"topic": "sensor/relay/4",
+"qos": "1",
+"datatype": "auto-detect",
+"broker": "394c31ef326a4cfc",
+"nl": false,
+"rap": true,
+"rh": 0,
+"inputs": 0,
+"x": 310,
+"y": 700,
+"wires": [
+[
+"fc049e391143909c"
+]
+]
+},
+{
+"id": "394c31ef326a4cfc",
+"type": "mqtt-broker",
+"name": "MQTT broker public",
+"broker": "91.121.93.94",
+"port": "1883",
+"clientid": "",
+"autoConnect": true,
+"usetls": false,
+"protocolVersion": "4",
+"keepalive": "60",
+"cleansession": true,
+"autoUnsubscribe": true,
+"birthTopic": "",
+"birthQos": "0",
+"birthRetain": "false",
+"birthPayload": "",
+"birthMsg": {},
+"closeTopic": "",
+"closeQos": "0",
+"closeRetain": "false",
+"closePayload": "",
+"closeMsg": {},
+"willTopic": "",
+"willQos": "0",
+"willRetain": "false",
+"willPayload": "",
+"willMsg": {},
+"userProps": "",
+"sessionExpiry": ""
+},
+{
+"id": "69b896e864744a45",
+"type": "ui_group",
+"name": "Relay Control",
+"tab": "4af17dbb9a04622e",
+"order": 1,
+"disp": true,
+"width": 12,
+"collapse": false
+},
+{
+"id": "4af17dbb9a04622e",
+"type": "ui_tab",
+"name": "relay control",
+"icon": "wi-wu-sunny",
+"order": 2,
+"disabled": false,
+"hidden": false
+}
+]
